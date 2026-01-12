@@ -42,7 +42,7 @@ assessmentButton.addEventListener(
     tweetDivision.innerText = '';
     const anchor = document.createElement('a');
     const hrefValue =
-      'https://twitter.com/intent/tweet?button_hashtag' + encodeURIComponent('あなたのいいところ') + '&ref_src=twsrc%5Etfw';
+      'https://twitter.com/intent/tweet?button_hashtag=' + encodeURIComponent('あなたのいいところ') + '&ref_src=twsrc%5Etfw';
 
     anchor.setAttribute('href', hrefValue);
     anchor.setAttribute('class', 'twitter-hashtag-button');
@@ -84,10 +84,9 @@ const answers = [
   '###userName###のいいところは節度です。強引すぎない###userName###の考えに皆が感謝しています。',
   '###userName###のいいところは好奇心です。新しいことに向かっていく###userName###の心構えが多くの人に魅力的に映ります。',
   '###userName###のいいところは気配りです。###userName###の配慮が多くの人を救っています。',
-  '###userName###のいいところは自制心です。やばいと思ったときにしっかりと衝動を抑えられる###userName###が皆から評価されています。',
-  '###userName###のいいところは優しさです。###userName###の優しい雰囲気や立ち振る舞いに多くの人が癒やされています。',
   '###userName###のいいところはそのすべてです。ありのままの###userName###自身がいいところなのです。',
   '###userName###のいいところは自制心です。やばいと思ったときにしっかりと衝動を抑えられる###userName###が皆から評価されています。',
+  '###userName###のいいところは優しさです。###userName###の優しい雰囲気や立ち振る舞いに多くの人が癒やされています。',
 ]
 
 /** 
@@ -167,6 +166,7 @@ function test() {
 }
 
 test()
+
 
 
 
